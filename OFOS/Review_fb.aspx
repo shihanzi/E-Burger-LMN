@@ -120,7 +120,7 @@
     </center>
   
               <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-            ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Aayushi.Mehta\Source\Repos\OnlineFoodOrderingSystem_C4\OFOS\OFOS\App_Data\ofos.mdf;Integrated Security=True" 
+            ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Shihan\source\repos\OFOS\OFOS\App_Data\ofos.mdf;Integrated Security=True" 
             SelectCommand="SELECT [Cmt_no], [Cust_Id], [Username], [Comment], [Credits] FROM [Feedback]" 
             UpdateCommand="UPDATE [Feedback] SET Credits=@Credits WHERE Cmt_no=@Cmt_no" >
 

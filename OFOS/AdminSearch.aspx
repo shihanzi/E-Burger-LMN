@@ -90,9 +90,9 @@
                 <br />
                 <asp:Label ID="lbl_city" runat="server" Text="CITY:" Font-Bold="true" Font-Size="Medium" Font-Names="Georgia"/>
                 <asp:DropDownList ID="dropdown_city" runat="server">
-                <asp:ListItem>Surat</asp:ListItem>
-                <asp:ListItem>Vadodara</asp:ListItem>
-                <asp:ListItem>Ahemdabad</asp:ListItem>
+                <asp:ListItem>Colombo</asp:ListItem>
+                <asp:ListItem>Kandy</asp:ListItem>
+                <asp:ListItem>Galle</asp:ListItem>
                 </asp:DropDownList>
                 &emsp;&emsp;&emsp;&emsp;&emsp;
                 <asp:Label ID="lbl_user" runat="server" Text="USER:" Font-Bold="true" Font-Size="Medium" Font-Names="Georgia"/>
