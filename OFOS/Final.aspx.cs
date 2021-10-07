@@ -40,7 +40,7 @@ namespace OFOS
             if (Session["pay"].ToString() == "COD")
             {              
                 Label1.Text = "Order has been successfully placed!" + "<br/><br/>" + "Estimated delivery time: 30 MINUTES" +
-                    "<br/>" + "Payment of ₹" + "<b>"+Session["total"]+"</b>"+ " is to be collected at delivery time.";
+                    "<br/>" + "Payment of Rs." + "<b>"+Session["total"]+"</b>"+ " is to be collected at delivery time.";
             }
             else if(Session["pay"].ToString()=="OT")
             {
