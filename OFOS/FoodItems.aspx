@@ -37,7 +37,7 @@
          <h2><asp:Label Style="float:right; color:white; margin-right:30px;" ID="Label1" runat="server" Font-Bold="true" Visible="false" />
              <asp:Label ID="Label2" Style="float:right; color:white" Text="Hello&nbsp" runat="server" Font-Bold="true" Visible="false" />
          </h2>      
-            <asp:Image ID="i" runat="server" ImageUrl="PIC\logo.png" Width="250px"  Height="350px"/>
+            <asp:Image ID="i" runat="server" ImageUrl="PIC\logo.png" Width="100px"  Height="150px"/>
        <center>&emsp;&emsp;
         <h1><asp:Label Style="color:#00ccff; margin-left:100px; font-variant-caps:small-caps;" ID="sizlr" runat="server" Visible="false" /></h1></center>
 
@@ -45,27 +45,24 @@
 
    
        
-            <asp:Button CssClass="b" ID="Button_soup" runat="server" Text="SOUP" OnClick="Button_soup_onclick"/>
-       
+            <asp:Button CssClass="b" ID="Button_soup" runat="server" Text="SOUP" OnClick="Button_soup_onclick"/>       
        <asp:Button CssClass="b" ID="Button_rice" runat="server" Text="RICE" OnClick="Button_rice_onclick"/>
        <asp:Button CssClass="b" ID="Button_noodles" runat="server" Text="BURGERS" OnClick="Button_noodles_onclick"/>
        <asp:Button CssClass="b" ID="Button_MainCourse" runat="server" Text="MAIN COURSE" OnClick="Button_maincourse_onclick"/>
        <asp:Button CssClass="b" ID="Button_dessert" runat="server" Text="DESSERT" OnClick="Button_dessert_onclick"/>
+            <asp:Button CssClass="b" ID="Button_Ice_Cream" runat="server" Text="ICE CREAM" OnClick="Button_icecream_onclick"/>
 
        <br /><br /><br />
      <center>
         <div class="w3-content w3-section" style="max-width:550px" id="pic" runat="server" >
             <br />
             <center>
-        <img class="mySlides w3-animate-fading" src="PIC\noodles.jpg"  height="450px" width="550px" />
-        <img class="mySlides w3-animate-fading" src="PIC\man.jpg" height="450px" width="550px" />
-        <img class="mySlides w3-animate-fading" src="PIC\szh_f.JPG" height="450px" width="550px" />
-        <img class="mySlides w3-animate-fading" src="PIC\rice.PNG" height="450px" width="550px" />
-        <img class="mySlides w3-animate-fading" src="PIC\chop.PNG" height="450px" width="550px" />
-        <img class="mySlides w3-animate-fading" src="PIC\schewan-vegetables.jpg" height="450px" width="550px" />
-        <img class="mySlides w3-animate-fading" src="PIC\KingSizeBurger.jpg" height="450px" width="550px" />
-        <img class="mySlides w3-animate-fading" src="PIC\manchurian.jpg" height="450px" width="550px" />
-         <img class="mySlides w3-animate-fading" src="PIC\c_v.jpg" height="450px" width="550px" />
+        <img class="mySlides w3-animate-fading" src="PIC\KingSize.jpg"  height="450px" width="550px" />
+        <img class="mySlides w3-animate-fading" src="PIC\Kids.jpg" height="450px" width="550px" />
+        <img class="mySlides w3-animate-fading" src="PIC\Cheese.JPG" height="450px" width="550px" />
+        <img class="mySlides w3-animate-fading" src="PIC\Beef.JPG" height="450px" width="550px" />
+        <img class="mySlides w3-animate-fading" src="PIC\Special.JPG" height="450px" width="550px" />
+        
                 </center>
         </div>
 

@@ -204,6 +204,15 @@ namespace OFOS
         protected global::System.Web.UI.WebControls.Button Button_dessert;
 
         /// <summary>
+        /// Button_Ice_Cream control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button_Ice_Cream;
+
+        /// <summary>
         /// pic control.
         /// </summary>
         /// <remarks>
