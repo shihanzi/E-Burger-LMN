@@ -37,7 +37,7 @@
          <h2><asp:Label Style="float:right; color:white; margin-right:30px;" ID="Label1" runat="server" Font-Bold="true" Visible="false" />
              <asp:Label ID="Label2" Style="float:right; color:white" Text="Hello&nbsp" runat="server" Font-Bold="true" Visible="false" />
          </h2>      
-            <asp:Image ID="i" runat="server" ImageUrl="PIC\logo.png" Width="350px"  Height="150px"/>
+            <asp:Image ID="i" runat="server" ImageUrl="PIC\logo.png" Width="250px"  Height="350px"/>
        <center>&emsp;&emsp;
         <h1><asp:Label Style="color:#00ccff; margin-left:100px; font-variant-caps:small-caps;" ID="sizlr" runat="server" Visible="false" /></h1></center>
 
@@ -48,7 +48,7 @@
             <asp:Button CssClass="b" ID="Button_soup" runat="server" Text="SOUP" OnClick="Button_soup_onclick"/>
        
        <asp:Button CssClass="b" ID="Button_rice" runat="server" Text="RICE" OnClick="Button_rice_onclick"/>
-       <asp:Button CssClass="b" ID="Button_noodles" runat="server" Text="NOODLES" OnClick="Button_noodles_onclick"/>
+       <asp:Button CssClass="b" ID="Button_noodles" runat="server" Text="BURGERS" OnClick="Button_noodles_onclick"/>
        <asp:Button CssClass="b" ID="Button_MainCourse" runat="server" Text="MAIN COURSE" OnClick="Button_maincourse_onclick"/>
        <asp:Button CssClass="b" ID="Button_dessert" runat="server" Text="DESSERT" OnClick="Button_dessert_onclick"/>
 
@@ -63,7 +63,7 @@
         <img class="mySlides w3-animate-fading" src="PIC\rice.PNG" height="450px" width="550px" />
         <img class="mySlides w3-animate-fading" src="PIC\chop.PNG" height="450px" width="550px" />
         <img class="mySlides w3-animate-fading" src="PIC\schewan-vegetables.jpg" height="450px" width="550px" />
-        <img class="mySlides w3-animate-fading" src="PIC\choco.jpg" height="450px" width="550px" />
+        <img class="mySlides w3-animate-fading" src="PIC\KingSizeBurger.jpg" height="450px" width="550px" />
         <img class="mySlides w3-animate-fading" src="PIC\manchurian.jpg" height="450px" width="550px" />
          <img class="mySlides w3-animate-fading" src="PIC\c_v.jpg" height="450px" width="550px" />
                 </center>

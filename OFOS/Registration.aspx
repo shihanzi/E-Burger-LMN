@@ -32,7 +32,7 @@
 </head>
 <body style="background-color:#222930;">
     
-    <asp:Image ID="i" runat="server" ImageUrl="PIC\logo.png" Width="150px"  Height="350px"/>
+    <asp:Image ID="i" runat="server" ImageUrl="PIC\logo.png" Width="250px"  Height="350px"/>
     <center>
 
     <form id="form1" runat="server" class="form-basic">
@@ -77,7 +77,7 @@
                     Display="Dynamic" ControlToValidate="tb_pwd" ForeColor="Red" Font-Size="Small" /></td>
             </tr>
             <tr>
-                <td style="text-align:right"><asp:Label ID="Label4" runat="server" Text="Reenter Password : "></asp:Label></td>
+                <td style="text-align:right"><asp:Label ID="Label4" runat="server" Text="Confirm Password : "></asp:Label></td>
                 <td style="text-align:left"><asp:TextBox ID="tb_repwd" runat="server" TextMode="Password"></asp:TextBox></td>
             </tr>
             <tr><td colspan="2">
@@ -131,7 +131,7 @@
         </tr>
         </table>
             <br /><br />
-        <asp:Button ID="Button1_register" runat="server" Text="Register Me" OnClick="Button1_register_Click" />
+        <asp:Button ID="Button1_register" runat="server" Text="Sign Up" OnClick="Button1_register_Click" />
         <br />
                </div>
     </form>

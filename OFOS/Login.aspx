@@ -23,7 +23,7 @@
     </style>
 </head>
 <body>
-    <asp:Image ID="i" runat="server" ImageUrl="PIC\logo.png" Width="350px"  Height="150px"/>
+    <asp:Image ID="i" runat="server" ImageUrl="PIC\logo.png" Width="200px"  Height="300px"/>
     <center>
     <form id="form1" runat="server">
 

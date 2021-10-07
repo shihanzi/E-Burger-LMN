@@ -33,7 +33,7 @@ namespace OFOS
             if (Session["user"] == null)
             {
                 sizlr.Visible = true;
-                sizlr.Text = "Sizzlers Are Not Available For ONLINE ORDER";
+                sizlr.Text = "ONLY BURGERS AVAILABLE FOR ORDERS OTHERS ARE COMING SOON";
                 hl.Visible = true;
                 Register.Visible = true;
                 b.Visible = false;

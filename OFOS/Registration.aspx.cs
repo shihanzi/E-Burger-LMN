@@ -28,10 +28,12 @@ namespace OFOS
             {
                 con.Open();
                 cmd.Parameters.AddWithValue("@Username", tb_username.Text);
+                cmd.Parameters.AddWithValue("@Contact_no", tb_contact.Text);
+                cmd.Parameters.AddWithValue("@Email", tb_email.Text);
                 int exist = (int)cmd.ExecuteScalar();
                 if (exist > 0)
                 {
-                    lblStatus.Text = "Username is already there. Enter another one.";
+                    lblStatus.Text = "You are already Regsitered, Your Username or Email or Contact Number is already there. Please Provide new details";
                 }
                 else
                 {

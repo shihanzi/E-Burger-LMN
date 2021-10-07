@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <asp:Image ID="i" runat="server" ImageUrl="PIC\logo.png" Width="350px"  Height="150px"/>
+    <asp:Image ID="i" runat="server" ImageUrl="PIC\logo.png" Width="250px"  Height="300px"/>
 
     <div class="align">
         
