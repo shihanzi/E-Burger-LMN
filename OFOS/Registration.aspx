@@ -32,7 +32,7 @@
 </head>
 <body style="background-color:#222930;">
     
-    <asp:Image ID="i" runat="server" ImageUrl="PIC\logo.png" Width="350px"  Height="150px"/>
+    <asp:Image ID="i" runat="server" ImageUrl="PIC\logo.png" Width="150px"  Height="350px"/>
     <center>
 
     <form id="form1" runat="server" class="form-basic">
@@ -124,9 +124,9 @@
             <td style="text-align:right"><asp:Label ID="Label9" runat="server" Text="City:"></asp:Label></td>
             <td style="text-align:left">
                 <asp:DropDownList ID="DropDownList1_city" runat="server" style="margin-left: 0px" Width="240px" >
-                <asp:ListItem>Surat</asp:ListItem>
-                <asp:ListItem>Vadodara</asp:ListItem>
-                <asp:ListItem>Ahemdabad</asp:ListItem>
+                <asp:ListItem>Colombo</asp:ListItem>
+                <asp:ListItem>Kandy</asp:ListItem>
+                <asp:ListItem>Galle</asp:ListItem>
                 </asp:DropDownList></td>
         </tr>
         </table>
