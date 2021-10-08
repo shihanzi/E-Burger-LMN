@@ -33,7 +33,7 @@ namespace OFOS
             if (Session["user"] == null)
             {
                 sizlr.Visible = true;
-                sizlr.Text = "ONLY BURGERS AVAILABLE FOR ORDERS OTHERS ARE COMING SOON";
+                sizlr.Text = "ONLY BURGERS AVAILABLE FOR ORDERS...!! OTHER ITEMS ARE COMING SOON";
                 hl.Visible = true;
                 Register.Visible = true;
                 b.Visible = false;
@@ -283,6 +283,30 @@ namespace OFOS
         }
 
         protected void Button1_Click(object sender, EventArgs e)
+        {
+            pic.Visible = false;
+
+            SqlConnection con = new SqlConnection(constr);
+            try
+            {
+                con.Open();
+                string selectSQL = "select Item_no,Item_name,Description,Image_url,Price from [dbo].[Item_Master] where (Type='BURGER')";
+                SqlCommand cmd = new SqlCommand(selectSQL, con);
+                griditem.DataSource = cmd.ExecuteReader();
+                griditem.DataBind();
+            }
+            catch (Exception err)
+            {
+                status.Text = err.Message;
+            }
+            finally
+            {
+                con.Close();
+            }
+
+        }
+
+        protected void Button_icecream_onclick(object sender, EventArgs e)
         {
             pic.Visible = false;
 

@@ -22,7 +22,7 @@ namespace OFOS
             string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Shihan\source\repos\OFOS\OFOS\App_Data\ofos.mdf;Integrated Security=True";
 
             SqlConnection con = new SqlConnection(connectionString);
-            string query = "select count(*) from [dbo].[Customers] WHERE Username=@Username";
+            string query = "select count(*) from [dbo].[Customers] WHERE Username=@Username OR Contact_no=@Contact_no OR Email=@Email ";
             SqlCommand cmd = new SqlCommand(query, con);
             try
             {

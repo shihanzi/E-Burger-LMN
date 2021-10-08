@@ -132,7 +132,7 @@
     <Content Include="error.png" />
     <Content Include="Feedback.aspx" />
     <Content Include="Final.aspx" />
-    <Content Include="FoodItems.aspx" />
+    <EmbeddedResource Include="FoodItems.aspx" />
     <Content Include="IMAGES\DESSERT\choco_lava_roll.jpeg" />
     <Content Include="IMAGES\DESSERT\choco_lava_roll1.jpeg" />
     <Content Include="IMAGES\DESSERT\walnut_brownie.jpeg" />
