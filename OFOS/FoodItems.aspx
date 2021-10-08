@@ -86,7 +86,7 @@
         </center>
         <asp:GridView ID="griditem" CssClass="gridview" HeaderStyle-CssClass="header" 
            RowStyle-CssClass="row" runat="server" AutoGenerateColumns="false"
-           CellSpacing="10" CellPadding="12" HeaderStyle-Font-Bold="true" Height="568px">
+           CellSpacing="10" CellPadding="12" HeaderStyle-Font-Bold="true" Height="544px">
             <Columns>
                
                 <asp:BoundField DataField="Item_no" HeaderText="ITEM NO" ReadOnly="true" SortExpression="Item_no" />

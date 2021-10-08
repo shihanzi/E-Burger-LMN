@@ -95,7 +95,7 @@
         <p style="margin-left: 40px; width: 900px;">
             <b>TYPE :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:DropDownList ID="dropdown_type" runat="server" Width="500px" CssClass=" form-control-static">
-                <asp:ListItem>BURGERS</asp:ListItem>
+                <asp:ListItem>BURGER</asp:ListItem>
                 <asp:ListItem>STARTERS</asp:ListItem>
                
             </asp:DropDownList>
