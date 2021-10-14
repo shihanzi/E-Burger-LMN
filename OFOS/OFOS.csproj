@@ -132,7 +132,7 @@
     <Content Include="error.png" />
     <Content Include="Feedback.aspx" />
     <Content Include="Final.aspx" />
-    <EmbeddedResource Include="FoodItems.aspx" />
+    <Content Include="FoodItems.aspx" />
     <Content Include="IMAGES\DESSERT\choco_lava_roll.jpeg" />
     <Content Include="IMAGES\DESSERT\choco_lava_roll1.jpeg" />
     <Content Include="IMAGES\DESSERT\walnut_brownie.jpeg" />
@@ -169,6 +169,7 @@
     <Content Include="MyAccount.aspx" />
     <Content Include="MyOrder.aspx" />
     <Content Include="OnlineTrans.aspx" />
+    <Content Include="Order_Status.aspx" />
     <Content Include="Payment.aspx" />
     <Content Include="PIC\choco.jpg" />
     <Content Include="PIC\chop.PNG" />
@@ -296,6 +297,13 @@
     </Compile>
     <Compile Include="OnlineTrans.aspx.designer.cs">
       <DependentUpon>OnlineTrans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order_Status.aspx.cs">
+      <DependentUpon>Order_Status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order_Status.aspx.designer.cs">
+      <DependentUpon>Order_Status.aspx</DependentUpon>
     </Compile>
     <Compile Include="Payment.aspx.cs">
       <DependentUpon>Payment.aspx</DependentUpon>

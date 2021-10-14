@@ -47,6 +47,9 @@
                     <a href="Manage_COD.aspx">Manage COD</a>
                 </li>
                 <li>
+                    <a href="Order_Status.aspx">Pending Orders</a>
+                </li>
+                <li>
                     <a href="Review_fb.aspx">Review Feedback</a>
                 </li>
                 <li>

@@ -69,7 +69,6 @@
         <script>
             var myIndex = 0;
             carousel();
-
             function carousel() {
             var i;
             var x = document.getElementsByClassName("mySlides");
@@ -85,17 +84,25 @@
 
         </center>
         <asp:GridView ID="griditem" CssClass="gridview" HeaderStyle-CssClass="header" 
-           RowStyle-CssClass="row" runat="server" AutoGenerateColumns="false"
-           CellSpacing="10" CellPadding="12" HeaderStyle-Font-Bold="true" Height="544px">
+           RowStyle-CssClass="row" runat="server" AutoGenerateColumns="False" HeaderStyle-Font-Bold="true" Height="544px" BorderStyle="None" PageSize="40" Width="1236px">
             <Columns>
                
                 <asp:BoundField DataField="Item_no" HeaderText="ITEM NO" ReadOnly="true" SortExpression="Item_no" />
-                <asp:BoundField DataField="Item_name" HeaderText="ITEM NAME" ReadOnly="true" SortExpression="Name"  ItemStyle-Font-Bold="true" />
+                <asp:BoundField DataField="Item_name" HeaderText="ITEM NAME" ReadOnly="true" SortExpression="Name"  ItemStyle-Font-Bold="true" >
+<ItemStyle Font-Bold="True"></ItemStyle>
+                </asp:BoundField>
                 <asp:BoundField DataField="Description" HeaderText="DESCRIPTION"  ReadOnly="true" SortExpression="Description" />
                 <asp:ImageField DataImageUrlField="Image_url" ControlStyle-Width="120" 
-                    ControlStyle-Height ="120" HeaderText = "IMAGE"  ItemStyle-HorizontalAlign="Center"/>
+                    ControlStyle-Height ="120" HeaderText = "IMAGE"  ItemStyle-HorizontalAlign="Center">
+<ControlStyle Height="120px" Width="120px"></ControlStyle>
+
+<ItemStyle HorizontalAlign="Center"></ItemStyle>
+                </asp:ImageField>
                 <asp:BoundField DataField="Price"  HeaderText="PRICE" ItemStyle-HorizontalAlign="Center" 
-                    ReadOnly="true" SortExpression="Price" ItemStyle-Font-Bold="true" ItemStyle-Font-Size="Large"/>
+                    ReadOnly="true" SortExpression="Price" ItemStyle-Font-Bold="true" ItemStyle-Font-Size="Large">
+          
+<ItemStyle HorizontalAlign="Center" Font-Bold="True" Font-Size="Large"></ItemStyle>
+                </asp:BoundField>
           
                 <asp:TemplateField HeaderText="QUANTITY" ItemStyle-HorizontalAlign="Center"  ItemStyle-Font-Bold="true">
                     <ItemTemplate>
@@ -103,9 +110,10 @@
                         <asp:RangeValidator ID="RangeValidator1" runat="server" ErrorMessage="<img src='error.png' width='25' height='25' />"
                              ControlToValidate="tb_quantity" Type="Integer" MinimumValue="1" MaximumValue="10" />                                         
                     </ItemTemplate>
+
+<ItemStyle HorizontalAlign="Center" Font-Bold="True"></ItemStyle>
                 </asp:TemplateField>
-          
-                
+                         
                 <asp:TemplateField>
                     <ItemTemplate>
                         <asp:Label ID="l1" Text="Added to Cart" runat="server"  Visible="false"/>
@@ -114,6 +122,10 @@
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>
+
+<HeaderStyle CssClass="header" Font-Bold="True"></HeaderStyle>
+
+<RowStyle CssClass="row"></RowStyle>
         </asp:GridView>       
     </form>
         </div>

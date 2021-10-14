@@ -55,7 +55,7 @@ namespace OFOS
             {
                 if (Session["pay"].ToString() == "OT")
                 {
-                    Label1.Text = "Transaction successful!"+"<br/>"+"Payment of ₹" + Session["total"] + " received." + "<br/><br/>" + "Please provide Delivery details.";
+                    Label1.Text = "Transaction successful!"+"<br/>"+"Payment of Rs" + Session["total"] + " received." + "<br/><br/>" + "Please provide Delivery details.";
                 }
                 else if(Session["pay"].ToString()=="COD")
                 {

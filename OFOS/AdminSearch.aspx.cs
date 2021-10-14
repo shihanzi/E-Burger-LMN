@@ -19,6 +19,8 @@ namespace OFOS
                     Response.Redirect("Admin_Login.aspx?msg=You need to login first");           
                 }
             //}
+
+
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)
@@ -65,6 +67,8 @@ namespace OFOS
                 cmd.Parameters.AddWithValue("@city", dropdown_city.SelectedItem.Text);
                 gridview1.DataSource = cmd.ExecuteReader();
                 gridview1.DataBind();
+                
+
 
             }
             catch (Exception err)
@@ -91,7 +95,7 @@ namespace OFOS
             try
             {
                 con.Open();                
-                String selectQuery = "select od.Item_no, im.Item_name, od.Quantity from [dbo].[Order_Details] od inner join [dbo].[Item_Master] im ON od.Order_Id=@Order_Id AND im.Item_no=od.Item_no";
+                String selectQuery = "select od.Order_Id, od.Item_no, im.Item_name, od.Quantity from [dbo].[Order_Details] od inner join [dbo].[Item_Master] im ON od.Order_Id=@Order_Id AND im.Item_no=od.Item_no";
                 SqlCommand cmd = new SqlCommand(selectQuery, con);
 
                 cmd.Parameters.AddWithValue("@Order_Id", gvr.Cells[3].Text);
@@ -108,5 +112,9 @@ namespace OFOS
             }
         }
 
+        protected void gridview_Status_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

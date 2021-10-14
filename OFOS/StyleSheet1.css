@@ -52,7 +52,7 @@ body{
 .gridview{
     border-style: none;
     border-color: inherit;
-    border-width: 5px;
+    border-width: 25px;
     padding-top:20%;
 }
 
