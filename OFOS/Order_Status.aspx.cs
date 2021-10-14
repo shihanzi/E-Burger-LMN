@@ -2,23 +2,29 @@
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Data;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using iTextSharp.text.html.simpleparser;
+using System.IO;
+using System.Web;
+using System.Web.UI;
+
 
 namespace OFOS
 {
     public partial class Order_Status : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-
-            
+        { 
                 if (Session["admin"] == null)
                 {
                     Response.Redirect("Admin_Login.aspx?msg=You need to login first");
-                    
+                
                 }
-
-            
-            
+        }
+        public override void VerifyRenderingInServerForm(Control control)
+        {
+            //base.VerifyRenderingInServerForm(control);
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)
@@ -76,6 +82,27 @@ namespace OFOS
                     }
                 }
             }
+        }
+
+        protected void Btn_Export_Click(object sender, EventArgs e)
+        {
+            Response.ContentType = "DailySales/pdf";
+            Response.AddHeader("content-disposition", "attachment;filename=Order Status.pdf");
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+            StringWriter sw = new StringWriter();
+            HtmlTextWriter hw = new HtmlTextWriter(sw);
+            gridview3.RenderControl(hw);
+            StringReader sr = new StringReader(sw.ToString());
+            Document pdfDoc = new Document(PageSize.A4, 10f, 10f, 10f, 0f);
+            HTMLWorker htmlparser = new HTMLWorker(pdfDoc);
+            PdfWriter.GetInstance(pdfDoc, Response.OutputStream);
+            pdfDoc.Open();
+            htmlparser.Parse(sr);
+            pdfDoc.Close();
+            Response.Write(pdfDoc);
+            Response.End();
+            gridview3.AllowPaging = true;
+            gridview3.DataBind();
         }
     }
 }

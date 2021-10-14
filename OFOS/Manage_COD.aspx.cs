@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Data;
 using System.Data.SqlClient;
-using System.Data.SqlTypes;
 
 namespace OFOS
 {
@@ -16,7 +11,9 @@ namespace OFOS
             if (Session["admin"] == null)
             {
                 Response.Redirect("Admin_Login.aspx?You need to login first");
+                
             }
+            this.BindGrid();
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)
@@ -75,7 +72,38 @@ namespace OFOS
             finally
             {
                 con.Close();
+                Response.Redirect(Request.RawUrl);
+            }
+
+            
+        }
+        public void BindGrid()
+        {
+
+            string constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Shihan\source\repos\OFOS\OFOS\App_Data\ofos.mdf;Integrated Security=True";
+            SqlConnection con = new SqlConnection(constr);
+            {
+                using (SqlCommand cmd = new SqlCommand("SELECT Order_Id, COD_Pay_Status FROM Payment"))
+                {
+                    using (SqlDataAdapter sda = new SqlDataAdapter())
+                    {
+                        cmd.Connection = con;
+                        sda.SelectCommand = cmd;
+                        using (DataTable dt = new DataTable())
+                        {
+                            sda.Fill(dt);
+                            gridview6.DataSource = dt;
+                            gridview6.DataBind();
+                        }
+                    }
+                }
             }
         }
+
+        protected void Btn_CheckStatusByDate_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Order_Status.aspx");
+        }
     }
+    
 }

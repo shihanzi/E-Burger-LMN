@@ -137,8 +137,7 @@
 		        <asp:GridView ID="gridview3" runat="server" AutoGenerateColumns="true"
             HeaderStyle-ForeColor="#3DFF33" CellSpacing="10" CellPadding="12" 
              PagerStyle-CssClass="gridViewPager" PagerStyle-HorizontalAlign="Center" Width="270px" OnSelectedIndexChanged="gridview3_SelectedIndexChanged">
-                    <Columns>
-                       
+                    <Columns>   
                     </Columns>
                     <HeaderStyle ForeColor="#3DFF33" />
                     <PagerStyle CssClass="gridViewPager" HorizontalAlign="Center" />
@@ -147,6 +146,8 @@
 		     
 		   <br/> <br/>
 
+
+                <asp:Button ID="Btn_Export" runat="server" Text="Export" OnClick="Btn_Export_Click" />
                 <asp:Label ID="Sts" runat="server" Text="" Visible="false"></asp:Label>
 
 	        </div>

@@ -90,7 +90,7 @@
               &nbsp;</p>
         <p style="margin-left: 40px"/>
 
-            <h4>Enter the ORDER_ID whose status needs to be updated :</h4>&nbsp;&nbsp; <asp:TextBox ID="TextBox1" runat="server" CssClass=" form-control" Height="30px" Width="144px"></asp:TextBox>
+            <h4>Enter the ORDER_ID to update the status of the Order :</h4>&nbsp;&nbsp; <asp:TextBox ID="TextBox1" runat="server" CssClass=" form-control" Height="30px" Width="144px"></asp:TextBox>
         <p>
 
             &nbsp;<p>
@@ -100,7 +100,20 @@
             &nbsp;<p style="margin-left: 320px"/>
 
             <asp:Button ID="Button1" runat="server" Text="SUBMIT" OnClick="Button1_Click" CssClass="btn" />
-              
+
+                 
+                 <br />
+
+		        <asp:GridView ID="gridview6" runat="server" AutoGenerateColumns="true"
+            HeaderStyle-ForeColor="#3DFF33" CellSpacing="10" CellPadding="12" 
+             PagerStyle-CssClass="gridViewPager" PagerStyle-HorizontalAlign="Center" Width="275px" OnSelectedIndexChanged="Page_Load">
+                    <Columns>      
+                    </Columns>
+                    <HeaderStyle ForeColor="#3DFF33" />
+                    <PagerStyle CssClass="gridViewPager" HorizontalAlign="Center" />
+                </asp:GridView>
+		        <br />
+                <asp:Button ID="Btn_CheckStatusByDate" runat="server" Text="Filter By Date" OnClick="Btn_CheckStatusByDate_Click" />
     </div>
     </form>
                              </div>
