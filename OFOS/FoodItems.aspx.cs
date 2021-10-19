@@ -16,19 +16,6 @@ namespace OFOS
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            System.DateTime t1 = System.DateTime.Now;
-              System.DateTime t2 = System.DateTime.Now;
-              System.DateTime t3 = System.DateTime.Now;
-              if (t3.TimeOfDay == t1.TimeOfDay || t3.TimeOfDay == t2.TimeOfDay)
-              {
-                status.Text = "Our Branches are Closed, You Can't Order Now...Visit Again During 8:00 AM to 11:00 PM";
-                status1.Text = "Thank You";
-                  status.Visible = true;
-                  status1.Visible = true;
-                  home.Visible = false;
-              }
-
-
 
             if (Session["user"] == null)
             {
@@ -328,6 +315,11 @@ namespace OFOS
                 con.Close();
             }
 
+        }
+
+        protected void admin_click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Admin_Login.aspx");
         }
     }
 }

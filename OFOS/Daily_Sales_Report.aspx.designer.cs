@@ -11,7 +11,7 @@ namespace OFOS
 {
 
 
-    public partial class AdminSearch
+    public partial class Daily_Sales_Report
     {
 
         /// <summary>
@@ -141,31 +141,22 @@ namespace OFOS
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl details;
 
         /// <summary>
-        /// gridview2 control.
+        /// GridView7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gridview2;
+        protected global::System.Web.UI.WebControls.GridView GridView7;
 
         /// <summary>
-        /// gridview1 control.
+        /// Btn_Export control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gridview1;
-
-        /// <summary>
-        /// Btn_DailySaleExport control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn_DailySaleExport;
+        protected global::System.Web.UI.WebControls.Button Btn_Export;
 
         /// <summary>
         /// Sts control.

@@ -145,6 +145,7 @@
                 </asp:GridView>
 		        <br />
 
+                <asp:Button ID="Btn_DailySaleExport" runat="server" Text="Daily Sale Export" OnClick="Btn_DailySaleExport_Click" />
                 <asp:Label ID="Sts" runat="server" Text="" Visible="false"></asp:Label>
 
 	        </div>

@@ -1,26 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using iTextSharp.text;
+using iTextSharp.text.html.simpleparser;
+using iTextSharp.text.pdf;
+using System;
+using System.Data;
+using System.Data.SqlClient;
+using System.IO;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data.SqlClient;
+
 
 namespace OFOS
 {
     public partial class AdminSearch : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-            /*if (!IsPostBack)
-            {*/
+        { 
                 if (Session["admin"] == null)
                 {
                     Response.Redirect("Admin_Login.aspx?msg=You need to login first");           
                 }
-            //}
-
-
+        }
+        public override void VerifyRenderingInServerForm(Control control)
+        {
+            //base.VerifyRenderingInServerForm(control);
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)
@@ -115,6 +118,27 @@ namespace OFOS
         protected void gridview_Status_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Btn_DailySaleExport_Click(object sender, EventArgs e)
+        {
+            Response.ContentType = "DailySales/pdf";
+            Response.AddHeader("content-disposition", "attachment;filename=Daily Sales.pdf");
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+            StringWriter sw = new StringWriter();
+            HtmlTextWriter hw = new HtmlTextWriter(sw);
+            gridview1.RenderControl(hw);
+            StringReader sr = new StringReader(sw.ToString());
+            Document pdfDoc = new Document(PageSize.A4, 10f, 10f, 10f, 0f);
+            HTMLWorker htmlparser = new HTMLWorker(pdfDoc);
+            PdfWriter.GetInstance(pdfDoc, Response.OutputStream);
+            pdfDoc.Open();
+            htmlparser.Parse(sr);
+            pdfDoc.Close();
+            Response.Write(pdfDoc);
+            Response.End();
+            gridview1.AllowPaging = true;
+            gridview1.DataBind();
         }
     }
 }

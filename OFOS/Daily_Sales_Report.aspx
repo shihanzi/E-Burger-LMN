@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Order_Status.aspx.cs" Inherits="OFOS.Order_Status" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Daily_Sales_Report.aspx.cs" Inherits="OFOS.Daily_Sales_Report" %>
 
 <!DOCTYPE html>
 
@@ -11,7 +11,7 @@
     <meta name="description" content=""/>
     <meta name="author" content=""/>
     
-    <title>Order Status</title>
+    <title>Sales Report</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="sidebar/css/bootstrap.min.css" rel="stylesheet"/>
@@ -87,7 +87,7 @@
         </p>
              
             <div id="calendar" runat="server">
-                <center><h1>CHECK FOR ORDER STATUS</h1></center>
+                <center><h1>DAILY SALES REPORT</h1></center>
                 <br /><br />
                 <center><h2>SEARCH BY:</h2></center>
                 <br />
@@ -124,25 +124,21 @@
                 <asp:Button ID="btn_s" runat="server" Text="Search" OnClick="btns_Click" CssClass="btn"></asp:Button>
             </div>
             <div id="details" runat="server" visible="false">
-                <br /><br />
-		        <asp:GridView id="gridview2" Runat="server" AutoGenerateColumns="true"
-                    HeaderStyle-ForeColor="#3DFF33" CellSpacing="10" CellPadding="12" 
-             PagerStyle-CssClass="gridViewPager" PagerStyle-HorizontalAlign="Center" Width="270px" />
-                <br />  <br />
+            
 
-                <b>Daily Sales Details</b>
+                <b>Order Details</b>
                 <br/>  <br/>
-                   <br />
-
-		        <asp:GridView ID="gridview3" runat="server" AutoGenerateColumns="true"
+                   
+                  <asp:GridView ID="GridView7" runat="server"
             HeaderStyle-ForeColor="#3DFF33" CellSpacing="10" CellPadding="12" 
-             PagerStyle-CssClass="gridViewPager" PagerStyle-HorizontalAlign="Center" Width="270px" OnSelectedIndexChanged="gridview3_SelectedIndexChanged">
+             PagerStyle-CssClass="gridViewPager" PagerStyle-HorizontalAlign="Center" Width="270px" OnSelectedIndexChanged="GridView7_SelectedIndexChanged">
                     <Columns>   
                     </Columns>
                     <HeaderStyle ForeColor="#3DFF33" />
                     <PagerStyle CssClass="gridViewPager" HorizontalAlign="Center" />
                 </asp:GridView>
-		        <br />
+		     
+                
 		     
 		   <br/> <br/>
 
@@ -173,4 +169,5 @@
     </center>
 </body>
 </html>
+
 

@@ -33,7 +33,8 @@
 
        <asp:Button CssClass="b1"  id="my_order" Text="My Order" OnClick="MyOrder_click" runat="server" Visible="false" />
        <asp:Button CssClass="b1"  id="hl" Text="Sign in" OnClick="signin_click" runat="server" />
-       <asp:Button ID="Register" runat="server" Text="Register" Visible="false"  CssClass="b1" OnClick="Register_Click" />
+            <asp:Button CssClass="b1"  id="Admin" Text="Admin Dashboard" OnClick="admin_click" runat="server" />
+            <asp:Button ID="Register" runat="server" Text="Register" Visible="false"  CssClass="b1" OnClick="Register_Click" />
          <h2><asp:Label Style="float:right; color:white; margin-right:30px;" ID="Label1" runat="server" Font-Bold="true" Visible="false" />
              <asp:Label ID="Label2" Style="float:right; color:white" Text="Hello&nbsp" runat="server" Font-Bold="true" Visible="false" />
          </h2>      

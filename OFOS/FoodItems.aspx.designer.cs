@@ -114,6 +114,15 @@ namespace OFOS
         protected global::System.Web.UI.WebControls.Button hl;
 
         /// <summary>
+        /// Admin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Admin;
+
+        /// <summary>
         /// Register control.
         /// </summary>
         /// <remarks>
@@ -229,7 +238,5 @@ namespace OFOS
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView griditem;
-
-        
     }
 }

@@ -120,8 +120,6 @@
     <Content Include="alogin\css\style1.css" />
     <Content Include="alogin\css\stylenew.css" />
     <Content Include="alogin\index.html" />
-    <Content Include="alogin\license.txt" />
-    <Content Include="alogin\README.txt" />
     <Content Include="App_Data\ofos.mdf" />
     <Content Include="App_Data\ofos_log.ldf">
       <DependentUpon>ofos.mdf</DependentUpon>
@@ -135,6 +133,7 @@
     <Content Include="assets\form-search.css" />
     <Content Include="assets\form-validation.css" />
     <Content Include="COD_Delivery.aspx" />
+    <Content Include="Daily_Sales_Report.aspx" />
     <Content Include="error.png" />
     <Content Include="Feedback.aspx" />
     <Content Include="Final.aspx" />
@@ -240,6 +239,13 @@
     </Compile>
     <Compile Include="COD_Delivery.aspx.designer.cs">
       <DependentUpon>COD_Delivery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Daily_Sales_Report.aspx.cs">
+      <DependentUpon>Daily_Sales_Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Daily_Sales_Report.aspx.designer.cs">
+      <DependentUpon>Daily_Sales_Report.aspx</DependentUpon>
     </Compile>
     <Compile Include="Feedback.aspx.cs">
       <DependentUpon>Feedback.aspx</DependentUpon>
@@ -352,7 +358,6 @@
     <Content Include="sidebar\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="sidebar\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="sidebar\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="sidebar\LICENSE" />
     <Content Include="sidebar\README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
